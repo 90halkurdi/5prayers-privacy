@@ -8,36 +8,71 @@
   body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1b1b1b; }
   h1 { font-size: 1.8em; } h2 { margin-top: 1.6em; font-size: 1.2em; }
   .muted { color: #666; }
+  ol li, ul li { margin: 0.3em 0; }
 </style>
 </head>
 <body>
 <h1>5 Prayers Widget — Privacy Policy</h1>
-<p class="muted">Last updated: 10 September 2026</p>
+<p class="muted">Last updated: 24 September 2026</p>
 
 <p>5 Prayers Widget ("the app") shows Islamic prayer times, an athan (adhan) alert, a Qibla direction and related information on your Android home screen, lock screen and notification bar. This policy explains what data the app handles and why.</p>
 
 <h2>Summary</h2>
 <ul>
-  <li>The app works fully offline. Prayer times are calculated on your device.</li>
+  <li>Prayer times are calculated on your device. The app works fully offline.</li>
   <li>Your location is used only on your device to calculate prayer times and the Qibla direction. It is never uploaded to us.</li>
-  <li>We do not have user accounts and do not collect names, emails or contacts.</li>
+  <li>You can use the whole app without an account, and nothing leaves your device if you do.</li>
+  <li>If you choose to sign in, your name, your email address and your prayer log are stored in our Firebase project so that they follow you to a new phone. You can delete them at any time — see <a href="#delete">Deleting your account and your data</a>.</li>
   <li>The free version shows ads served by Google AdMob, which may use your advertising ID. Buying Premium removes ads.</li>
 </ul>
 
+<h2>Accounts (optional)</h2>
+<p>The app can be used without signing in. Choose "Continue as guest", or simply never open the Profile tab, and no account is created and nothing is uploaded.</p>
+
+<p>If you do sign in, you may do so with your Google account or with an email address and a password. Signing in exists for one reason: so that your prayer log survives a lost or replaced phone.</p>
+
+<p><strong>What we store while you are signed in.</strong> One record per account, holding:</p>
+<ul>
+  <li>your display name;</li>
+  <li>which of the five daily prayers you have marked as prayed, by date;</li>
+  <li>the Quran pages and dhikr counts you have logged, by date.</li>
+</ul>
+<p>Your email address, and where you signed in with Google your Google account identifier, are held by Firebase Authentication so that you can sign in again. We never receive your Google password. Email passwords are handled by Firebase and we never see them.</p>
+
+<p><strong>What is never stored with your account:</strong> your location or city, your prayer times, your settings, your widget appearance, your purchases, or your contacts. Those stay on your device whether you are signed in or not.</p>
+
+<p><strong>Who can see it.</strong> Only you. The database rules permit each account to read and write its own record and nothing else. No other user of the app can reach it. We do not sell it, share it or publish it.</p>
+
+<p><strong>Where it is kept.</strong> In a Google Firebase project operated by us, in Google's Dammam region in Saudi Arabia. Google acts as our processor; see <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</p>
+
+<p><strong>How long.</strong> Your record keeps the last thirteen months of your log, and anything older is removed automatically on the next sync. Your own phone keeps its full history regardless, until you uninstall.</p>
+
+<h2 id="delete">Deleting your account and your data</h2>
+<p>You can delete your account and everything stored with it at any time, and you do not need to ask us.</p>
+<p><strong>In the app:</strong></p>
+<ol>
+  <li>Open the app and go to the <strong>Profile</strong> tab.</li>
+  <li>Tap <strong>Delete my account</strong>.</li>
+  <li>Confirm.</li>
+</ol>
+<p>This permanently removes the record stored with your account — your name, your prayer marks, your Quran and dhikr counts — and the sign-in account itself, including your email address. It cannot be undone. The log on your own phone is left alone; uninstalling the app removes that.</p>
+<p><strong>If you have already uninstalled the app</strong>, or you cannot sign in, email <a href="mailto:90halkurdi@gmail.com">90halkurdi@gmail.com</a> from the address you signed in with and ask for your account to be deleted. We will do it and confirm, normally within 30 days.</p>
+<p>Signing out is not the same as deleting. It leaves your record in place, so that signing in again brings your log back.</p>
+
 <h2>Location</h2>
-<p>If you tap "Use my GPS location", the app asks Android for your approximate/precise location once, stores the resulting coordinates and city name on your device, and uses them to calculate prayer times and the Qibla bearing. You can instead type a city name; that search is sent to a public geocoding service to look up coordinates, and only the city text you typed is transmitted. Location data is not sent to our servers (we do not operate any) and is deleted when you uninstall the app.</p>
+<p>If you tap "Use my GPS location", the app asks Android for your approximate/precise location once, stores the resulting coordinates and city name on your device, and uses them to calculate prayer times and the Qibla bearing. You can instead type a city name; that search is sent to a public geocoding service to look up coordinates, and only the city text you typed is transmitted. Your location is never uploaded to our Firebase project, is not part of your account record, and is deleted when you uninstall the app.</p>
 
 <h2>Advertising (free version)</h2>
-<p>The free version displays banner ads through Google AdMob. Google may collect the device's advertising ID, coarse location derived from IP address, and device information to serve and measure ads, as described in <a href="https://policies.google.com/technologies/partner-sites">Google's policy</a>. In the EEA, UK and Switzerland you are asked for consent before any ad is loaded, and you can change your choice at any time from the app's settings ("Privacy options"). You can also reset or delete your advertising ID in Android settings.</p>
+<p>The free version displays banner ads through Google AdMob. Google may collect the device's advertising ID, coarse location derived from IP address, and device information to serve and measure ads, as described in <a href="https://policies.google.com/technologies/partner-sites">Google's policy</a>. In the EEA, UK and Switzerland you are asked for consent before any ad is loaded, and you can change your choice at any time from the app's settings ("Privacy options"). You can also reset or delete your advertising ID in Android settings. Ads are not linked to your account.</p>
 
 <h2>Purchases</h2>
-<p>Premium is a one-time purchase processed by Google Play Billing. We receive only a purchase token confirming the unlock; payment details stay with Google.</p>
+<p>Premium is a one-time purchase processed by Google Play Billing. We receive only a purchase token confirming the unlock; payment details stay with Google. Premium belongs to your Google Play account rather than to an app account, and is not part of your stored record.</p>
 
 <h2>Notifications</h2>
-<p>With your permission the app posts local notifications (prayer reminders, athan playback control and an optional prayer-times bar). These are generated on the device; no notification service of ours is involved.</p>
+<p>With your permission the app posts local notifications (prayer reminders, athan playback control and an optional prayer-times bar). These are generated on the device; no notification service of ours is involved, and we do not send push messages.</p>
 
 <h2>Data we store on the device</h2>
-<p>Your settings (city and coordinates, calculation method, widget colours and options, premium status) are stored in app-private storage on your device and are removed when you uninstall. Android's automatic backup may include them in your Google account backup according to your device settings.</p>
+<p>Your settings (city and coordinates, calculation method, widget colours and options, premium status) and your prayer log are stored in app-private storage on your device and are removed when you uninstall. Android's automatic backup may include them in your Google account backup according to your device settings.</p>
 
 <h2>Children</h2>
 <p>The app is not directed at children under 13 and does not knowingly collect personal information from them.</p>
@@ -46,6 +81,6 @@
 <p>If this policy changes, the updated version will be published at this address with a new date.</p>
 
 <h2>Contact</h2>
-<p>Questions about privacy: <a href="mailto:90halkurdi@gmail.com">90halkurdi@gmail.com</a></p>
+<p>Questions about privacy, or a deletion request: <a href="mailto:90halkurdi@gmail.com">90halkurdi@gmail.com</a></p>
 </body>
 </html>
